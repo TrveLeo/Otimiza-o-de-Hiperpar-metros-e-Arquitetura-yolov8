@@ -1,0 +1,17 @@
+# Arquivo de configuração para YOLOv8 com ResNet
+nc: 80  # número de classes
+depth_multiple: 0.33  # fator de profundidade da rede
+width_multiple: 0.50  # fator de largura da rede
+
+backbone:
+  # [from, number, module, args]
+  [[-1, 1, Conv, [64, 6, 2, 2]],  # inicial conv
+   [-1, 1, ResNetBackbone, [resnet50, True]],  # Backbone usando ResNet50, True para pré-treinado
+   [-1, 1, SPP, [512, 1, 5]],  # Spatial Pyramid Pooling
+   [-1, 1, C3, [512]],         # C3 bloco final
+  ]
+
+head:
+  [[-1, 1, C3, [256]],  # Camadas da cabeça YOLOv8
+   [-1, 1, Detect, [nc]]
+  ]
