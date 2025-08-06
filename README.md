@@ -1,0 +1,1 @@
+# Otimiza-o-de-Hiperpar-metros-e-Arquitetura-yolov8
