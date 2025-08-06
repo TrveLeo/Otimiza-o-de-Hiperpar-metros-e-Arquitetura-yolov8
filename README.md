@@ -16,6 +16,6 @@ Recursos utilizados:
 - Uso de datasets coletados em ambientes reais (IFES - Campus Guarapari e Vitória).
 
 
-Datasets utilizados
+Datasets utilizados:
 - https://drive.google.com/drive/folders/1ojX8lyy9xUoslsASMZEj893Zxpz6XjEB?usp=drive_link
 - https://drive.google.com/drive/folders/1HM_vv-cBLIl5H11rrKCwB06p6SxK_dks?usp=drive_link
